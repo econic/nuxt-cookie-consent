@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-cookie-consent",
+  "version": "0.0.1",
+  "description": "Renderless GDPR compliant Nuxt cookie consent library",
+  "license": "MIT",
+  "author": "Aimo Künkel",
+  "contributors": [
+	"Dario Ferderber",
+    "Davor Teskera"
+  ],
+  "keywords": [
+    "nuxt cookie consent",
+    "nuxt gdpr",
+    "nuxt gdpr consent"
+  ],
+  "main": "lib/module.js",
+  "repository": "https://github.com/econic/nuxt-cookie-consent",
+  "publishConfig": {
+    "access": "public"
+  },
+  "eslintIgnore": [
+    "*"
+  ],
+  "files": [
+    "lib",
+	"types/index.d.ts",
+	"types/vue.d.ts"
+  ],
+  "dependencies": {
+  }
+}
