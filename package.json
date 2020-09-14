@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Aimo Künkel",
   "contributors": [
-	"Dario Ferderber",
+    "Dario Ferderber",
     "Davor Teskera"
   ],
   "keywords": [
@@ -14,7 +14,10 @@
     "nuxt gdpr consent"
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/econic/nuxt-cookie-consent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/econic/nuxt-cookie-consent.git"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -23,10 +26,21 @@
   ],
   "files": [
     "lib",
-	"types/index.d.ts",
-	"types/vue.d.ts"
+    "types/index.d.ts",
+    "types/vue.d.ts"
   ],
   "dependencies": {
     "cookie-universal-nuxt": "^2.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/econic/nuxt-cookie-consent/issues"
+  },
+  "homepage": "https://github.com/econic/nuxt-cookie-consent#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
