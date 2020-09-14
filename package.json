@@ -27,5 +27,6 @@
 	"types/vue.d.ts"
   ],
   "dependencies": {
+    "cookie-universal-nuxt": "^2.1.4"
   }
 }
