@@ -1,12 +1,10 @@
 {
   "name": "nuxt-cookie-consent",
-  "version": "0.0.1",
-  "description": "Renderless GDPR compliant Nuxt cookie consent library",
+  "version": "0.0.2",
+  "description": "Renderless Nuxt cookie consent library to stay GDPR compliant",
   "license": "MIT",
   "author": "Aimo Künkel",
   "contributors": [
-    "Dario Ferderber",
-    "Davor Teskera"
   ],
   "keywords": [
     "nuxt cookie consent",
@@ -41,6 +39,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "typings": "types/index.d.ts"
 }
