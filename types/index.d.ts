@@ -2,24 +2,32 @@
 import "./vue";
 import { NuxtCookies } from 'cookie-universal-nuxt'
 
+type Consent = true|false|undefined
+
 export interface ConsentStatus {
-	[key: string]: true|false|undefined
+	[key: string]: Consent
+}
+
+export interface ConsentUpdateData {
+	consentStatus: Consent
+	previousConsentStatus: Consent
 }
 
 export interface CookieConsent {
 	hasUserMadeChoice: boolean,
 	readonly consentStatus: ConsentStatus,
-	updateCookieProperties: () => null
+	updateCookieProperties: () => void
 	showConsentOptions: boolean,
 	readonly hasUserAcceptedAllGroups: boolean
 	readonly isConsentComplete: boolean
 	readonly config: any
-	acceptGroup: (groupId: string) => null
-	declineGroup: (groupId: string) => null
-	acceptAll: () => null
-	declineAll: () => null
-	clearAllData: () => null
+	acceptGroup: (groupId: string) => void
+	declineGroup: (groupId: string) => void
+	acceptAll: () => void
+	declineAll: () => void
+	clearAllData: () => void
 	getGroupIdByCookieName: (cookieName: string) => string
+	registerGroupHandler: (groupId: string, handlerId: string, handler: (consentUpdateData: ConsentUpdateData) => any) => void
 
 	// decorators
 	get:  NuxtCookies['get']
